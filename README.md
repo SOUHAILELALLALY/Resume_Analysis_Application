@@ -1,24 +1,27 @@
 # Intelligent Job Recommender
 
-An end-to-end machine learning & NLP project that analyzes resumes (PDF) to predict the candidate's job category, then dynamically scrapes LinkedIn to recommend real job openings based on the detected profile and desired location.
+An end-to-end machine learning & NLP project that analyzes PDF resumes to predict the candidate’s job profile using a KNN classifier, then dynamically scrapes LinkedIn to recommend real-time job openings based on the detected profile and chosen location.
 ✨ Features
 
-✅ Resume Parsing & Cleaning:
-Reads PDF resumes, cleans the text (URLs, special characters, emojis, etc.) using regex & NLTK.
+✅ Resume Parsing & Cleaning
 
-✅ Profile Prediction:
-Predicts the candidate's job profile (e.g. Data Scientist, Java Developer, Business Analyst) using a pre-trained TF-IDF + Scikit-learn classifier.
+    Reads PDF resumes and extracts text using PyPDF2.
 
-✅ Real-time Job Recommendations:
-Scrapes LinkedIn to fetch relevant job openings based on the predicted profile and location specified by the user.
+    Cleans the text by removing URLs, mentions, emojis, and non-ASCII characters with regex and NLTK.
 
-✅ Interactive Streamlit Interface:
+✅ Profile Prediction with KNN
 
-    Upload your PDF resume.
+    Converts the cleaned text into TF-IDF vectors.
 
-    Choose your preferred country or city.
+    Uses a K-Nearest Neighbors (KNN) classifier to predict the most likely job category.
 
-    See your predicted profile and matching job opportunities.
+✅ Real-time Job Recommendations
+
+    Scrapes LinkedIn job postings based on the predicted profile and location.
+
+✅ Interactive Streamlit Interface
+
+    Upload your resume, select your location, and instantly get tailored job listings.
 
 🖥️ Demo
 <img src="app.png" alt="App Screenshot" />
