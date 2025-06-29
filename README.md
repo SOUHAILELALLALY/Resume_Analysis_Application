@@ -1,6 +1,7 @@
 # Intelligent Job Recommender
 
 An end-to-end machine learning & NLP project that analyzes PDF resumes to predict the candidate’s job profile using a KNN classifier, then dynamically scrapes LinkedIn to recommend real-time job openings based on the detected profile and chosen location.
+
 ✨ Features
 
 ✅ Resume Parsing & Cleaning
