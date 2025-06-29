@@ -1,4 +1,4 @@
-Intelligent Job Recommender
+# Intelligent Job Recommender
 
 An end-to-end machine learning & NLP project that analyzes resumes (PDF) to predict the candidate's job category, then dynamically scrapes LinkedIn to recommend real job openings based on the detected profile and desired location.
 ✨ Features
@@ -21,7 +21,7 @@ Scrapes LinkedIn to fetch relevant job openings based on the predicted profile a
     See your predicted profile and matching job opportunities.
 
 🖥️ Demo
-<img src="C:/Users/PC/Desktop/app.png" alt="App Screenshot" />
+<img src="app.png" alt="App Screenshot" />
 
 
 ⚙️ Tech Stack
